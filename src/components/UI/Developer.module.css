@@ -1,0 +1,80 @@
+.developer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 2px 2px #313131;
+  background: #ad343e;
+  border-top-left-radius: 25px;
+  width: 30%;
+  height: 10%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  position: absolute;
+  right: 0;
+  animation: meals-appear 1s ease-out forwards;
+}
+
+h1 {
+  color: white;
+  font-style: italic;
+  font-weight: 800;
+  font-size: 1.3rem;
+  margin-right: 1rem;
+}
+
+.linkedin {
+  box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.35);
+  margin-left: 1rem;
+  width: 10%;
+  height: 40%;
+  background: url("https://cdn-icons-png.flaticon.com/512/174/174857.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: rotateY(40deg) rotateZ(15deg) rotateX(10deg) scale(1.2);
+}
+
+.github {
+  border-radius: 25px;
+  margin-left: 1.5rem;
+  width: 10%;
+  height: 40%;
+  background: url("https://cdn-icons-png.flaticon.com/512/25/25231.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: rotateY(40deg) rotateZ(15deg) rotateX(10deg) scale(1.2);
+  box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.35);
+}
+
+.linkedin:hover {
+  cursor: pointer;
+  width: 28%;
+  height: 45%;
+}
+
+.github:hover {
+  cursor: pointer;
+  width: 28%;
+  height: 45%;
+}
+.linkedin p {
+  margin-top: 0%;
+  margin-left: 35%;
+}
+
+.github p {
+  margin-top: 0%;
+  margin-left: 35%;
+}
+
+@keyframes meals-appear {
+  from {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
